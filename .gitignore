@@ -1,0 +1,92 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE and local assistant state
+.idea/
+.vscode/
+.claude/
+.codex/
+.agents/
+.reasonix/
+.superpowers/
+
+# JavaScript dependencies and build outputs
+node_modules/
+**/node_modules/
+dist/
+build/
+
+# Research data, model artifacts, and generated outputs
+_github_upload_transformer-gcn/
+data/
+outputs/
+unpacked/
+docx_format_check_01_body_run/
+_ppt_style_analysis/
+pdf_figures/
+figures/output/
+figures/final/
+figures/raw_data_viz/output/
+figures/raw_data_viz/outputs/
+
+# Large/generated data and model files
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.xlsm
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tif
+*.tiff
+*.gpkg
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
+*.geojson
+*.nc
+*.h5
+*.hdf5
+
+# Manuscript, presentation, image, and archive outputs
+*.docx
+*.doc
+*.pdf
+*.pptx
+*.ppt
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
+*.svg
+
+# OS files
+.DS_Store
+Thumbs.db
