@@ -1,3 +1,5 @@
+"""Model definitions for Transformer-GCN and baseline neural networks."""
+
 # from layers import MLP,transformer,GNNLayer
 # import torch.nn as nn
 # import torch.nn.functional as F
