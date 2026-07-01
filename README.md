@@ -21,6 +21,22 @@ pip install -r requirements.txt
 
 `torch` and `torch-geometric` installation can depend on the local CUDA/Python version. If needed, install them from the official PyTorch and PyTorch Geometric instructions first, then install the remaining requirements.
 
+## Quick Test
+
+Run the included synthetic-data smoke test:
+
+```bash
+python quick_test.py
+```
+
+Expected output:
+
+```text
+quick_test passed: Transformer-GCN forward pass output shape = (6, 4)
+```
+
+This test imports the main Transformer-GCN model, builds a small synthetic graph, and runs one forward pass. It does not require the manuscript data files.
+
 ## Expected Local Data Layout
 
 The data are not included in this repository. Place local data and model artifacts under:
@@ -56,3 +72,7 @@ python train_rf.py
 ```
 
 Outputs are written to `outputs/`, which is ignored by Git.
+
+## License
+
+This code is distributed under the MIT License. See `LICENSE`.
