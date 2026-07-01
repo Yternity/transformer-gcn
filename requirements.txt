@@ -1,3 +1,4 @@
+# Core scientific Python dependencies
 numpy
 pandas
 scipy
