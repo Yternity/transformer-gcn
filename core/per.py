@@ -1,3 +1,5 @@
+"""Per-class accuracy utilities for imbalanced classification outputs."""
+
 import torch
 import math
 
