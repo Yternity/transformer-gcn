@@ -10,6 +10,9 @@ This repository is intentionally limited to the code needed for manuscript revie
 - `predict.py`: prediction entry point for chunked large-scale inference.
 - `train_rf.py`: random-forest baseline entry point.
 - `core/`: model definitions, graph construction, training, prediction, and evaluation utilities.
+- `data/README.md`: data-source, local-file, and redistribution documentation.
+- `docs/reproducibility.md`: environment, command, and reproducibility notes.
+- `quick_test.py`: synthetic-data smoke test.
 
 ## Environment
 
@@ -20,6 +23,13 @@ pip install -r requirements.txt
 ```
 
 `torch` and `torch-geometric` installation can depend on the local CUDA/Python version. If needed, install them from the official PyTorch and PyTorch Geometric instructions first, then install the remaining requirements.
+
+The smoke test was verified with Python 3.11.15, PyTorch 2.6.0+cu126, and PyTorch Geometric 2.7.0. A conda-style environment file is also provided:
+
+```bash
+conda env create -f environment.yml
+conda activate transformer-gcn
+```
 
 ## Quick Test
 
@@ -51,6 +61,8 @@ outputs/
 
 Default paths are defined in `core/config.py`.
 
+See `data/README.md` for detailed documentation of the online source products, author-generated local files, feature groups, and data redistribution policy.
+
 ## Run
 
 Train the main model:
@@ -72,6 +84,10 @@ python train_rf.py
 ```
 
 Outputs are written to `outputs/`, which is ignored by Git.
+
+## Reproducibility
+
+See `docs/reproducibility.md` for tested environment details, data layout, full training/prediction commands, and links to the main public source products.
 
 ## License
 
