@@ -1,3 +1,5 @@
+"""Training workflow for Transformer-GCN and neural baseline models."""
+
 import argparse
 import copy
 import random
@@ -310,4 +312,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
