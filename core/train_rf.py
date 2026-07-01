@@ -1,3 +1,5 @@
+"""Training workflow for the random-forest baseline model."""
+
 import torch
 import numpy as np
 
