@@ -1,3 +1,5 @@
+"""Chunked spatial prediction workflow for trained Transformer-GCN models."""
+
 from __future__ import annotations
 
 import argparse
