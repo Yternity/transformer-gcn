@@ -31,7 +31,9 @@ build/
 
 # Research data, model artifacts, and generated outputs
 _github_upload_transformer-gcn/
-data/
+data/*
+!data/
+!data/README.md
 outputs/
 unpacked/
 docx_format_check_01_body_run/
