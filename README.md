@@ -1,8 +1,8 @@
 # transformer-gcn
 
-Minimal code package for the vegetation community classification and prediction experiments reported in the manuscript.
+Research code package for the vegetation community classification and prediction experiments reported in the manuscript.
 
-This repository is intentionally limited to the code needed for manuscript review. Large data files, trained weights, generated outputs, figures, manuscripts, and local working notes are excluded.
+This repository contains the source code, documentation, and quick test needed for manuscript review. Large data files, trained weights, generated outputs, figures, manuscripts, and local working notes are excluded.
 
 ## Contents
 
