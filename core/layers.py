@@ -1,3 +1,5 @@
+"""Neural network layers used by the Transformer-GCN model."""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
