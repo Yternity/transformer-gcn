@@ -1,3 +1,5 @@
+"""Evaluation helpers for classification experiments."""
+
 import torch
 import torch.nn as nn
 
