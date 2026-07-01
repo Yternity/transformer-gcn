@@ -1,2 +1,1 @@
-"""Core package for training/inference pipeline."""
-
+"""Core package for Transformer-GCN training and inference."""
