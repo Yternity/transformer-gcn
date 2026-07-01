@@ -1,0 +1,17 @@
+name: transformer-gcn
+channels:
+  - pytorch
+  - nvidia
+  - pyg
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - joblib
+  - tqdm
+  - pytorch=2.6
+  - pyg=2.7
+  - pip
