@@ -1,3 +1,5 @@
+"""Data filtering, splitting, and spatial graph-construction utilities."""
+
 import torch
 from torch_geometric.data import Data
 import math
@@ -196,4 +198,3 @@ def build_graph_from_coords(
 
 
     return data
-
