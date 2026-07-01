@@ -1,3 +1,5 @@
+"""Configuration defaults and runtime paths for the manuscript code."""
+
 from pathlib import Path
 
 
@@ -34,4 +36,3 @@ def ensure_runtime_dirs() -> None:
     OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     TEMP_GRIDS_DIR.mkdir(parents=True, exist_ok=True)
-
