@@ -10,6 +10,7 @@ This repository contains the source code, documentation, and quick test needed f
 - `predict.py`: prediction entry point for chunked large-scale inference.
 - `train_rf.py`: random-forest baseline entry point.
 - `core/`: model definitions, graph construction, training, prediction, and evaluation utilities.
+- `scripts/gee/`: Google Earth Engine covariate-stack extraction script for the 130 environmental features.
 - `data/README.md`: data-source, local-file, and redistribution documentation.
 - `docs/reproducibility.md`: environment, command, and reproducibility notes.
 - `quick_test.py`: synthetic-data smoke test.
@@ -62,6 +63,20 @@ outputs/
 Default paths are defined in `core/config.py`.
 
 See `data/README.md` for detailed documentation of the online source products, author-generated local files, feature groups, and data redistribution policy.
+
+## Covariate Extraction
+
+The Google Earth Engine script used to document the environmental covariate
+stack is provided in:
+
+```text
+scripts/gee/build_covariate_stack.js
+```
+
+It builds the public-source 26-band predictor image and exports five zonal
+summary statistics for each predictor, producing the 130 covariates described
+in the manuscript. User-owned vegetation reference units and prediction grid
+assets must be supplied in the script `CONFIG` block.
 
 ## Run
 

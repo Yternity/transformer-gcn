@@ -9,6 +9,7 @@ This public repository contains:
 
 - model definitions;
 - training and prediction entry points;
+- the Google Earth Engine covariate extraction script;
 - dependency files;
 - a synthetic quick test;
 - documentation for data sources and local data layout.
@@ -167,6 +168,23 @@ Earth Engine and NOAA/ISRIC data services:
 
 See `data/README.md` for the distinction between online source products and
 author-generated local files.
+
+## Earth Engine Covariate Build
+
+The public GEE preprocessing script is:
+
+```text
+scripts/gee/build_covariate_stack.js
+```
+
+It builds the 26 base predictors from public source products and exports five
+zonal statistics for each predictor (`min`, `max`, `mean`, `median`, and
+`stdDev`). This produces the 130 environmental covariates used by the model.
+
+Before running, replace the placeholder assets in the script `CONFIG` block
+with user-owned vegetation reference units and prediction-grid features. The
+script does not redistribute manuscript-specific spatial units or derived
+tables.
 
 ## Randomness and Splits
 

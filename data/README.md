@@ -57,6 +57,12 @@ latitude, and 130 environmental covariate summaries.
 `outputs/results/best_model_seed_42.pt` is produced by `python train.py` and
 is required for `python predict.py`.
 
+The public Earth Engine preprocessing script for constructing the 130
+covariate summaries is provided in `scripts/gee/build_covariate_stack.js`.
+It uses placeholder user assets for the vegetation reference units and
+prediction grid, because these spatial units are manuscript-specific and are
+not redistributed in this repository.
+
 ## Feature Groups
 
 The model uses 130 environmental covariate summaries plus longitude and
@@ -134,13 +140,14 @@ manuscript, then reproduce the same class harmonization and sampling steps.
 At a high level, the local data build followed these steps:
 
 1. Obtain or prepare vegetation-community reference units and their class IDs.
-2. Use the public Earth Engine products listed above to extract annual or
-   static covariate summaries for each training unit.
+2. Use `scripts/gee/build_covariate_stack.js` and the public Earth Engine
+   products listed above to extract annual or static covariate summaries for
+   each training unit.
 3. Build `train_set.xlsx` with labels, coordinates, and covariates.
 4. Convert the table to a PyTorch Geometric `Data` object and save it as
    `data/ours_data.pt`.
 5. Build `prediction_set.csv` on the national prediction grid using the same
-   covariate definitions and column order.
+   GEE script, covariate definitions, and column order.
 6. Run the released training and prediction code.
 
 The released `quick_test.py` does not require any of these files; it uses a
