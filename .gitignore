@@ -92,3 +92,6 @@ figures/raw_data_viz/outputs/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Revision tables for GLOPLACHA-D-26-00945 (tracked on purpose)
+!revision/*.csv
