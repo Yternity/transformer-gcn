@@ -1,0 +1,23 @@
+﻿code,map_subclass,samples,terrace_I,terrace_II,terrace_III,community_name_cn,community_name_en
+V01,(2)温带针叶林,1515,0,552,963,温性松杉类针叶乔木群落,Temperate pine-spruce-fir coniferous tree community
+V02,(3)亚热带针叶林,7938,0,1507,6431,暖性松杉柏类常绿针叶乔木群落,Warm-climate evergreen pine-cypress-fir coniferous tree community
+V03,(5)亚热带和热带山地针叶林,1739,296,1443,0,山地耐寒松铁杉冷杉针叶乔木群落,Montane cold-tolerant pine-hemlock-fir coniferous tree community
+V04,(8)温带落叶阔叶林,3689,3,1776,1910,温带壳斗-椴树-槭树落叶阔叶乔木群落,Temperate Fagaceae-Tilia-Acer deciduous broadleaved tree community
+V05,(l9)亚热带、热带常绿阔叶、落叶阔叶灌丛(常含稀树),4735,3,1171,3561,亚热带-热带檵木-杜鹃-白栎常绿与落叶阔叶灌丛群落,Subtropical-tropical Loropetalum-Rhododendron-Quercus evergreen and deciduous broadleaved shrub community
+V06,(10)亚热带落叶阔叶林,1037,14,393,630,亚热带壳斗科落叶阔叶乔木群落,Subtropical Fagaceae deciduous broadleaved tree community
+V07,(12)亚热带常绿阔叶林,1971,0,622,1349,壳斗-樟科常绿阔叶乔木群落,Fagaceae-Lauraceae evergreen broadleaved tree community
+V08,(18)温带落叶灌丛,2626,1,1692,933,温带多科杂类落叶灌木群落,Temperate mixed-family deciduous shrub community
+V09,(22)亚高山落叶阔叶灌丛,1312,523,789,0,亚高山柳属-杜鹃落叶阔叶灌丛群落,Subalpine Salix-Rhododendron deciduous broadleaved shrub community
+V10,(23)亚高山硬叶常绿阔叶灌丛,1041,458,583,0,高山栎类硬叶常绿阔叶灌丛群落,Alpine Quercus sclerophyllous evergreen broadleaved shrub community
+V11,(26)温带灌木荒漠,1003,4,763,236,旱生肉质-鳞叶灌木荒漠群落,Xerophytic succulent- and scale-leaved shrub desert community
+V12,(28)温带半灌木、矮半灌木荒漠,1977,22,1603,352,盐生旱生矮半灌木荒漠群落,Halophytic-xerophytic dwarf semi-shrub desert community
+V13,(33)温带丛生禾草典型草原,2602,13,2361,228,针茅属丛生禾草草原群落,Stipa tussock-grass typical steppe community
+V14,(35)高寒禾草、苔草草原,1133,843,290,0,高寒针茅-苔草草本草原群落,Alpine Stipa-Carex herbaceous steppe community
+V15,(36)温带草丛,1530,0,594,936,温带根茎型中生禾草草丛群落,Temperate rhizomatous mesic grass community
+V16,(37)亚热带、热带草丛,4185,2,1872,2311,芒类-黄茅暖性禾草草丛群落,Warm-climate Miscanthus-Heteropogon grass community
+V17,(40)温带禾草、杂类草盐生草甸,1535,9,851,675,温带耐盐禾草-杂类草草甸群落,Temperate salt-tolerant grass-forb meadow community
+V18,(41)高寒嵩草、杂类草草甸,2941,2008,933,0,嵩草属高寒莎草-杂类草草甸群落,Alpine Kobresia sedge-forb meadow community
+V19,(48)高山稀疏植被,2441,2362,79,0,高山垫状-雪莲类特化稀疏植被群落,Alpine cushion-plant and snow-lotus sparse vegetation community
+V20,(52)两年三熟或一年两熟旱作和落叶果树园,1197,0,193,1004,温带旱作禾谷-落叶果树栽培群落,Temperate dryland cereal and deciduous orchard cultivation community
+V21,(53)一年两熟水旱粮食作物、果树园和经济林,2342,0,1598,744,暖区水旱轮作作物-常绿/落叶经济林木群落,Warm-region paddy-dryland crop rotation and evergreen-deciduous economic tree community
+V22,(54)一年两熟或三熟水旱轮作(有双季稻)及常绿果树园、亚热带经济林,3123,0,458,2665,双季稻为主暖热型作物-常绿经济林果群落,Warm-humid double-rice cropping and evergreen economic orchard community
