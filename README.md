@@ -1,8 +1,14 @@
 # transformer-gcn
 
-Research code package for the vegetation community classification and prediction experiments reported in the manuscript.
+Research code package for the vegetation community classification and prediction experiments reported in
+*Modern vegetation-climate associations across China's three topographic steps: Implications for global-change ecology and paleoclimate reconstruction*
+(Bowen Wang, Zhiyao Li and Qianghu Liu; Global and Planetary Change, manuscript GLOPLACHA-D-26-00945, in revision).
 
-This repository contains the source code, documentation, and quick test needed for manuscript review. Large data files, trained weights, generated outputs, figures, manuscripts, and local working notes are excluded.
+This repository contains the source code, documentation, and quick test needed for manuscript review. Large data files, trained weights, generated outputs, figures, manuscripts, and local working notes are excluded from the repository.
+
+## Data
+
+All data generated in the study are released with the article as Supplementary Data S1–S10: the harmonized labels and attributes of the 58,824 reference polygons (S1), the 53,612-sample modelling cohort with its 130 covariates and fold assignments (S2), the 1991–2020 station climatology and gridded climate fields (S3, S4), the validation and terrain-ablation outputs (S5, S6), the community-climate statistics (S7), the national 1-km prediction (S8), the trained model weights (S9) and the scripts of the revision analyses (S10). The polygons of the 1:1,000,000 Vegetation Map of China are not redistributed; they are available from the Resource and Environment Science and Data Center, Chinese Academy of Sciences (https://www.resdc.cn), under its terms of use.
 
 ## Contents
 
@@ -14,6 +20,7 @@ This repository contains the source code, documentation, and quick test needed f
 - `data/README.md`: data-source, local-file, and redistribution documentation.
 - `docs/reproducibility.md`: environment, command, and reproducibility notes.
 - `quick_test.py`: synthetic-data smoke test.
+- `revision/`: reference-sample, class and station-climate tables added during the revision (see `revision/README.md`).
 
 ## Environment
 

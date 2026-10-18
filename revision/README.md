@@ -1,7 +1,9 @@
 # Revision tables (GLOPLACHA-D-26-00945)
 
-Tables added during the major revision of the manuscript *Topographic modulation of modern
-vegetation-climate coupling across China* (Global and Planetary Change).
+Tables added during the major revision of the manuscript
+*Modern vegetation-climate associations across China's three topographic steps: Implications for global-change ecology and paleoclimate reconstruction*
+(Global and Planetary Change). The complete data of the study are released with the article as Supplementary
+Data S1–S10.
 
 ## `reference_samples_corrected.csv`
 
@@ -41,9 +43,11 @@ the original map and observe the data center's terms of use.
 
 The 348 NOAA GSOD stations used in the manuscript, with mean annual temperature (`mat_c`, °C) and mean annual
 precipitation (`map_mm`, mm) over 1991–2020, the number of valid years (`valid_years`), station elevation
-(`elevation_m`) and the Köppen class at the station from the 1901–2000 Köppen raster (`koppen_code`,
+(`elevation_m`) and the Köppen-Geiger class at the station from the 0.1° map of Peel et al. (2007) (`koppen_code`,
 `koppen_group`). A station-year is valid when daily temperature and precipitation are both available on at
 least 90% of days; stations with at least 24 valid years are included. GSOD precipitation for Chinese stations
 is largely missing in 1999.
 
-Source: NOAA National Centers for Environmental Information, Global Surface Summary of the Day (GSOD).
+Sources: NOAA National Centers for Environmental Information, Global Surface Summary of the Day (GSOD);
+Peel, M.C., Finlayson, B.L., McMahon, T.A., 2007. Updated world map of the Köppen-Geiger climate
+classification. Hydrol. Earth Syst. Sci. 11, 1633–1644. https://doi.org/10.5194/hess-11-1633-2007
