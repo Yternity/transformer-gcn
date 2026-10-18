@@ -204,7 +204,10 @@ PyTorch, NumPy, and Python random seeds are set in `core/train.py`.
 
 The released quick test verifies model import and a forward pass. It does not
 verify full scientific reproducibility because the manuscript data are not
-redistributed in this repository.
+redistributed in this repository. They are released with the article as
+Supplementary Data S1–S10, including the modelling covariates and folds (S2),
+the national prediction (S8), the trained weights (S9) and the revision scripts
+(S10).
 
 Full numerical reproduction requires rebuilding the local derived files with
 the same vegetation-label harmonization, Earth Engine source products, spatial

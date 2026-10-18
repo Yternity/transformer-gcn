@@ -1,6 +1,7 @@
 # Data Documentation
 
-This repository does not redistribute the manuscript data files. The released
+The data generated in the study are released with the article as Supplementary Data S1–S10 (see the
+repository `README.md`). This code repository itself does not redistribute the manuscript data files. The released
 code is intended to be run after the user places locally prepared data under
 `data/` and trained model artifacts under `outputs/`.
 
@@ -97,9 +98,9 @@ not copied into this repository.
 | GHSL built-up surface | `JRC/GHSL/P2023A/GHS_BUILT_S/2020` | 2020 | built-up covariates |
 | SRTM elevation | `USGS/SRTMGL1_003` | static product | elevation, slope, aspect, roughness |
 | SoilGrids | ISRIC SoilGrids layers, including SOC, pH, and clay | long-term/static soil product | 0-30 cm soil covariates |
-| NOAA GSOD | NOAA/NCEI Global Summary of the Day | 2020-2024 | station-based climate analysis and rule-based bioclimatic zones; not required for model training |
+| NOAA GSOD | NOAA/NCEI Global Summary of the Day | 1991-2020 normals (348 stations) | station-based climate analysis; not required for model training |
 | ETOPO relief model | NOAA ETOPO / ETOPO1 local DEM asset | static relief product | background relief and elevation support for climate-zone figures; not required for model training |
-| Koppen climate zones | external Koppen-Geiger climate raster used locally | 1901-2000 in the local analysis | post hoc climate correspondence; not required for model training |
+| Koppen climate zones | 0.1° Koppen-Geiger map of Peel et al. (2007), Hydrol. Earth Syst. Sci. 11, 1633-1644 | long-term GHCN station records | post hoc climate correspondence; not required for model training |
 
 Official source pages for the main public products are listed in
 `docs/reproducibility.md`.
@@ -130,7 +131,8 @@ vegetation classes into integer class IDs, filters classes with fewer than
 1,000 samples by default, and remaps retained classes to contiguous IDs for
 training.
 
-The reference label layer itself is not redistributed here. Users who wish to
+The reference label layer itself is not redistributed here; the point-level labels and attributes of all
+reference polygons are released with the article as Supplementary Data S1. Users who wish to
 reproduce the full manuscript workflow should obtain the vegetation reference
 data from the original map/atlas or institutional source cited in the
 manuscript, then reproduce the same class harmonization and sampling steps.
