@@ -1,0 +1,115 @@
+# transformer-gcn
+
+Research code package for the vegetation community classification and prediction experiments reported in
+*Topographic modulation of modern vegetation-climate coupling across China: Implications for global-change ecology and paleoclimate reconstruction*
+(Bowen Wang, Zhiyao Li and Qianghu Liu; submitted to Global and Planetary Change).
+
+This repository contains the source code, documentation, and quick test needed for manuscript review. Large data files, trained weights, generated outputs, figures, manuscripts, and local working notes are excluded from the repository.
+
+## Data
+
+The harmonized labels and attributes of the 58,824 reference polygons, together with the community class table, are released with the article as Supplementary Data S1. Other data generated in the study are available from the corresponding authors on reasonable request. The polygons of the 1:1,000,000 Vegetation Map of China are not redistributed; they are available from the Resource and Environment Science and Data Center, Chinese Academy of Sciences (https://www.resdc.cn), under its terms of use.
+
+## Contents
+
+- `train.py`: training entry point for the Transformer-GCN model and baseline neural models.
+- `predict.py`: prediction entry point for chunked large-scale inference.
+- `train_rf.py`: random-forest baseline entry point.
+- `core/`: model definitions, graph construction, training, prediction, and evaluation utilities.
+- `scripts/gee/`: Google Earth Engine covariate-stack extraction script for the 130 environmental features.
+- `data/README.md`: data-source, local-file, and redistribution documentation.
+- `docs/reproducibility.md`: environment, command, and reproducibility notes.
+- `quick_test.py`: synthetic-data smoke test.
+
+## Environment
+
+Install the Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+`torch` and `torch-geometric` installation can depend on the local CUDA/Python version. If needed, install them from the official PyTorch and PyTorch Geometric instructions first, then install the remaining requirements.
+
+The smoke test was verified with Python 3.11.15, PyTorch 2.6.0+cu126, and PyTorch Geometric 2.7.0. A conda-style environment file is also provided:
+
+```bash
+conda env create -f environment.yml
+conda activate transformer-gcn
+```
+
+## Quick Test
+
+Run the included synthetic-data smoke test:
+
+```bash
+python quick_test.py
+```
+
+Expected output:
+
+```text
+quick_test passed: Transformer-GCN forward pass output shape = (6, 4)
+```
+
+This test imports the main Transformer-GCN model, builds a small synthetic graph, and runs one forward pass. It does not require the manuscript data files.
+
+## Expected Local Data Layout
+
+The data are not included in this repository. Place local data and model artifacts under:
+
+```text
+data/
+  ours_data.pt
+  prediction_set.csv
+outputs/
+  results/
+```
+
+Default paths are defined in `core/config.py`.
+
+See `data/README.md` for detailed documentation of the online source products, author-generated local files, feature groups, and data redistribution policy.
+
+## Covariate Extraction
+
+The Google Earth Engine script used to document the environmental covariate
+stack is provided in:
+
+```text
+scripts/gee/build_covariate_stack.js
+```
+
+It builds the public-source 26-band predictor image and exports five zonal
+summary statistics for each predictor, producing the 130 covariates described
+in the manuscript. User-owned vegetation reference units and prediction grid
+assets must be supplied in the script `CONFIG` block.
+
+## Run
+
+Train the main model:
+
+```bash
+python train.py --model-name ours --seed 42 --epochs 1000 --patience 50
+```
+
+Run prediction:
+
+```bash
+python predict.py --chunk-size 50000 --grid-size 0.4 --buffer-cells 1
+```
+
+Train the random-forest baseline:
+
+```bash
+python train_rf.py
+```
+
+Outputs are written to `outputs/`, which is ignored by Git.
+
+## Reproducibility
+
+See `docs/reproducibility.md` for tested environment details, data layout, full training/prediction commands, and links to the main public source products.
+
+## License
+
+This code is distributed under the MIT License. See `LICENSE`.
